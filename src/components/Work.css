@@ -1,0 +1,40 @@
+section {
+    @apply bg-bgMain text-white text-opacity-50 w-full h-screen relative
+}
+
+.main-content {
+    @apply p-16 mx-auto h-full w-full flex flex-col absolute top-0 left-0
+}
+
+.main-content h1 {
+    @apply text-xl text-white opacity-100 capitalize
+}
+
+.links {
+    @apply flex flex-col justify-center h-full py-12
+}
+
+.links a {
+    @apply h-full w-full border-b border-white flex items-center transition-colors ease-in
+}
+
+.links a p {
+    @apply text-xl pt-2 ease-in-out transition-colors duration-1000
+}
+
+.links a h1 {
+    @apply text-5xl opacity-50 ease-in-out transition-colors duration-1000
+}
+
+.arrow {
+    @apply bg-black ml-5 w-14 h-14 rounded-full flex items-center justify-center -translate-x-10 opacity-0 transition-all ease-in duration-300 shadow-md shadow-black/50
+}
+.links a:hover .arrow{
+    @apply opacity-100 translate-x-0
+}
+.links a:hover h1, .links a:hover p{
+    @apply text-black opacity-100
+}
+.links a:hover{
+    @apply border-black
+}

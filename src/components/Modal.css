@@ -1,0 +1,29 @@
+.modal{
+    @apply absolute w-full h-screen overflow-hidden
+}
+
+.overlay{
+    @apply w-full h-full absolute transition-colors ease-in opacity-75 duration-500
+}
+
+.images{
+    @apply w-full h-screen relative translate-x-[30%] translate-y-[65%]
+}
+.cover{
+    @apply w-full h-full absolute flex justify-center items-center gap-28 transition-transform ease-in
+}
+.img-container{
+    height: 450px;
+    width: 300px;
+    @apply rotate-[10deg]
+}
+.img-container:nth-child(1){
+    transform: translatey(-100%) rotate(10deg);
+}
+.img-container:nth-child(3){
+    transform: translatey(100%) rotate(10deg);
+}
+
+.img-container img,.img-container video{
+    @apply w-full h-full object-cover shadow-lg shadow-black/50
+}
